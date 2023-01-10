@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    font-family: cursive;
+    min-width: 100%;
+    max-width: 100%;
+}
+.home, .guest{
+    margin: 0 10rem;
+    background-color: #fff;
+    padding: 2rem 7rem;
+    text-align: center;
+}
+.homeNum, .guestNum{
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    background-color: teal;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.reset-button{
+    border: none;
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px){
+    body{
+        flex-direction: column;
+        margin: 7rem 0;
+    }
+    .home{
+        margin-top: 3rem;
+    }
+    .home, .guest{
+        margin: 2rem 0;
+    }
+}
